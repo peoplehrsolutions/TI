@@ -1,0 +1,499 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>
+Talent Internship Platform | People HR Solutions India™
+</title>
+
+<meta name="description"
+content="Talent Internship Program - Orientation, Assessment and Learning Experience Platform">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+<!-- APP WRAPPER -->
+
+<div class="app">
+
+<!-- SIDEBAR -->
+
+<aside class="sidebar">
+
+<div class="brand">
+
+<img
+src="https://lh3.googleusercontent.com/d/1-oQpMubI4Xfv1V6bSbNXZmu19HW_NjEF"
+alt="People HR Solutions India">
+
+<h2>
+People HR Solutions India™
+</h2>
+
+</div>
+
+<nav>
+
+<a class="active">
+Dashboard
+</a>
+
+<a>
+Orientation
+</a>
+
+<a>
+Assessment
+</a>
+
+<a>
+Results
+</a>
+
+</nav>
+
+<div class="sidebar-footer">
+
+<span>
+Talent Internship Program
+</span>
+
+</div>
+
+</aside>
+
+<!-- MAIN CONTENT -->
+
+<main class="main">
+
+<!-- HERO -->
+
+<section class="hero">
+
+<div>
+
+<div class="badge">
+
+DAY 0 ORIENTATION
+
+</div>
+
+<h1>
+
+Welcome to the Talent Internship Program
+
+</h1>
+
+<p>
+
+Build industry-ready skills through practical learning,
+projects and guided development.
+
+</p>
+
+</div>
+
+<div class="hero-card">
+
+<div class="hero-score">
+
+25%
+
+</div>
+
+<div class="hero-label">
+
+Current Progress
+
+</div>
+
+</div>
+
+</section>
+
+<!-- JOURNEY -->
+
+<section class="journey">
+
+<div class="section-header">
+
+<h2>
+Your Learning Journey
+</h2>
+
+</div>
+
+<div class="timeline">
+
+<div class="timeline-step active">
+
+<div class="step-number">
+1
+</div>
+
+<h3>
+Orientation
+</h3>
+
+<p>
+Learn about the program and platform.
+</p>
+
+</div>
+
+<div class="timeline-step">
+
+<div class="step-number">
+2
+</div>
+
+<h3>
+Assessment
+</h3>
+
+<p>
+Complete Day 0 assessment.
+</p>
+
+</div>
+
+<div class="timeline-step">
+
+<div class="step-number">
+3
+</div>
+
+<h3>
+Project
+</h3>
+
+<p>
+Receive first assignment.
+</p>
+
+</div>
+
+<div class="timeline-step">
+
+<div class="step-number">
+4
+</div>
+
+<h3>
+Certification
+</h3>
+
+<p>
+Earn recognition.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ORIENTATION -->
+
+<section
+id="orientationSection"
+class="card">
+
+<div class="card-header">
+
+<h2>
+Day 0 Orientation
+</h2>
+
+<span class="status">
+Pending
+</span>
+
+</div>
+
+<p>
+
+Review the complete orientation material before proceeding.
+
+</p>
+
+<iframe
+class="slides-frame"
+src="https://docs.google.com/presentation/d/e/2PACX-1vTwX6vPDXDiy93RKKY0paUNT60pG_G3HtTe9MElwc9f9gLXFcVtOwCk3IGTZ_2hj_0AyQnD9EAufCBb/pubembed?start=true&loop=false&delayms=10000">
+</iframe>
+
+<div class="orientation-check">
+
+<input
+type="checkbox"
+id="orientationCheck">
+
+<label for="orientationCheck">
+
+I confirm that I have completed the orientation.
+
+</label>
+
+</div>
+
+<button
+id="startAssessmentBtn"
+class="primary-btn">
+
+Continue to Assessment
+
+</button>
+
+</section>
+
+<!-- PROFILE -->
+
+<section
+id="profileSection"
+class="card hidden">
+
+<h2>
+
+Candidate Profile
+
+</h2>
+
+<div class="form-grid">
+
+<div>
+
+<label>
+Full Name
+</label>
+
+<input
+type="text"
+id="candidateName">
+
+</div>
+
+<div>
+
+<label>
+Email Address
+</label>
+
+<input
+type="email"
+id="candidateEmail">
+
+</div>
+
+<div>
+
+<label>
+College / University
+</label>
+
+<input
+type="text"
+id="candidateCollege">
+
+</div>
+
+<div>
+
+<label>
+Domain Interest
+</label>
+
+<select id="candidateDomain">
+
+<option value="">
+Select
+</option>
+
+<option>
+HR
+</option>
+
+<option>
+Marketing
+</option>
+
+<option>
+Sales
+</option>
+
+<option>
+Data Analytics
+</option>
+
+<option>
+IT
+</option>
+
+</select>
+
+</div>
+
+</div>
+
+<button
+id="beginQuizBtn"
+class="primary-btn">
+
+Begin Assessment
+
+</button>
+
+</section>
+
+<!-- QUIZ -->
+
+<section
+id="quizSection"
+class="card hidden">
+
+<div class="quiz-top">
+
+<h2>
+Day 0 Assessment
+</h2>
+
+<div id="questionCounter">
+
+Question 1 of 10
+
+</div>
+
+</div>
+
+<div class="progress">
+
+<div
+id="progressFill"
+class="progress-fill">
+</div>
+
+</div>
+
+<div
+id="questionContainer">
+
+</div>
+
+<div class="quiz-actions">
+
+<button
+id="prevBtn"
+class="secondary-btn">
+
+Previous
+
+</button>
+
+<button
+id="nextBtn"
+class="primary-btn">
+
+Next
+
+</button>
+
+</div>
+
+</section>
+
+<!-- RESULTS -->
+
+<section
+id="resultsSection"
+class="card hidden">
+
+<div class="result-icon">
+
+🏆
+
+</div>
+
+<h2>
+
+Assessment Completed
+
+</h2>
+
+<div
+id="scoreDisplay">
+
+0%
+
+</div>
+
+<div
+id="resultMessage">
+
+</div>
+
+<button
+id="launchProjectBtn"
+class="primary-btn">
+
+Launch Day 0 Project
+
+</button>
+
+</section>
+
+<!-- FAIL -->
+
+<section
+id="failSection"
+class="card hidden">
+
+<div class="result-icon">
+
+📘
+
+</div>
+
+<h2>
+
+Review & Retry
+
+</h2>
+
+<p>
+
+You have not achieved the required score.
+
+</p>
+
+<button
+id="retryBtn"
+class="primary-btn">
+
+Retake Assessment
+
+</button>
+
+</section>
+
+</main>
+
+</div>
+
+<script src="js/app.js"></script>
+
+</body>
+
+</html>
+```
